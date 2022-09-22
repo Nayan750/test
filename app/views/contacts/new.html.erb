@@ -1,25 +1,30 @@
-<div class="container">
-  <h1>Contact Form</h1>
-  <%= form_for @contact do |f| %>
-    <div class="col-md-6">
-      <%= f.label :name %></br>
-      <%= f.text_field  :name, required: true, class: "contact-form-text-area" %></br>
+<div class="container p-5">
+  <div class="">
+    <div class="">
+        <h1>Contact Us</h1>
+           <%= form_for @contact do |f| %>
+            <%= f.label :name, class:"text-white label" %></br>
+            <%= f.text_field  :name, required: true, class: "contact-form-text-area form-control" %></br>
 
-      <%= f.label :email %></br>
-      <%= f.text_field :email, required: true, class: "contact-form-text-area" %></br>
-      <%= f.label :phone %></br>
-      <%= f.text_field :phone, required: true, class: "contact-form-text-area" %></br>
+            <%= f.label :email, class:"text-white label"  %></br>
+            <%= f.text_field :email, required: true, class: "contact-form-text-area form-control" %></br>
+            <%= f.label :phone, class:"text-white label" %></br>
+            <%= f.text_field :phone, required: true, class: "contact-form-text-area form-control" %></br>
 
 
-      <%= f.label :message %></br>
-      <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area", 
-            placeholder: "Send me a message"%></br>
+            <%= f.label :message, class:"text-white label" %></br>
+            <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area form-control", 
+                  placeholder: "Send me a message"%></br>
 
-      <div class= "d-none">
-        <%= f.text_field :nickname, :hint => 'Leave this field blank!', style: 'display:none' %>
-      </div>
+            <div class= "d-none">
+              <%= f.text_field :nickname, :hint => 'Leave this field blank!', style: 'display:none' %>
+            </div>
 
-      <%= f.submit 'Send Message', class: 'btn btn-primary' %>
+            <%= f.submit 'Send Message', class: 'btn btn-primary' %>
     </div>
-  <% end %> 
+    <div class="">        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14439.38262656364!2d55.2764285!3d25.208427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40969e56c2aad502!2sEmirates%20Financial%20Towers!5e0!3m2!1sen!2suk!4v1663849762092!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <% end %> 
+    </div>
+  </div>
 </div>
