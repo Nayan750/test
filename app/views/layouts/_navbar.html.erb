@@ -1,6 +1,6 @@
  <nav class="navbar">
      <!-- LOGO -->
-     <a href="/" class="logo">Auzmena</a>
+     <%= link_to "Auzmena", root_path, class:"logo"%>
      <!-- NAVIGATION MENU -->
      <ul class="nav-links">
        <!-- USING CHECKBOX HACK -->
@@ -9,9 +9,9 @@
        <!-- NAVIGATION MENUS -->
        <div class="menu">
        <li class="hover-underline-animation"><a href="#" class="">Our Services</a></li>
-         <li class="hover-underline-animation"><a href="/contact">About Us</a></li>
+         <li class="hover-underline-animation"><%= link_to "About Us", about_url %></li>
          <li class="hover-underline-animation"><a href="/about">Our Business</a></li>
-         <li class="hover-underline-animation"><a href="/contacts/new">Contact</a></li>
+         <li class="hover-underline-animation"><%= link_to "Contact", new_contact_url %></li>
        </div>
      </ul>
    </nav>
