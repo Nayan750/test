@@ -1,47 +1,9 @@
+<%= form_for @contact do |f| %>
+
 <div class="banner">
   <%= image_tag "https://images.unsplash.com/photo-1487284122274-e864e9dec2bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" , class:"banner-img" %>
   <h1 class="contactbannertitle text-center ">Contact US</h1>
 </div>
-<section class="">
-  <div class="contactform">
-  <div class="contactinfo p-2">
-        <ul>
-          <li class="info"><i class="fa-solid fa-location-pin contacticon"></i> Office 1004, 10 th floor
-            Emirates Finanical Towers DIFC
-            DUBAI, UAE
-          </li>
-          <li class="info"><i class="fa-solid fa-envelope contacticon"></i> info@auzmena.com</li>
-          <li class="info"><i class="fa-sharp fa-solid fa-phone contacticon"></i> +97147708091</li>
-        </ul>
-    </div>
-    <div class="contactinfo1 p-2">
-        <h2>Get in Touch</h2>
-           <%= form_for @contact do |f| %>
-
-            <%= f.label :email, class:"text-white label"  %></br>
-            
-            <%= f.label :phone, class:"text-white label" %></br>
-           </br>
-
-
-            <%= f.label :message, class:"text-white label" %></br>
-            <%= f.text_area :message, rows: 8, cols: 40, required: true, class: "contact-form-text-area form-control", 
-                  placeholder: "Send me a message"%></br>
-
-            <div class= "d-none">
-              <%= f.text_field :nickname, :hint => 'Leave this field blank!', style: 'display:none' %>
-            </div>
-
-            <%= f.submit 'Submit', class: 'btn btn-secondary' %>
-    </div>
-  </div>
-    <div class="map">  
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14439.38262656364!2d55.2764285!3d25.208427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40969e56c2aad502!2sEmirates%20Financial%20Towers!5e0!3m2!1sen!2str!4v1663972988728!5m2!1sen!2str" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
-        
-    </div>
-</section>
-
-
 <!-- ====== Contact Section Start -->
 <section class="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10">
    <div class="container">
@@ -1064,3 +1026,12 @@
 </section>
 <% end %> 
 <!-- ====== Contact Section End -->
+<section class="">
+ 
+    <div class="map">  
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14439.38262656364!2d55.2764285!3d25.208427!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x40969e56c2aad502!2sEmirates%20Financial%20Towers!5e0!3m2!1sen!2str!4v1663972988728!5m2!1sen!2str" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+        
+    </div>
+</section>
+
+
