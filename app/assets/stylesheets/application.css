@@ -25,7 +25,7 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-    background-color: #38484D!important;
+    background-color: #f5f5f5!important;
 }
 h1,h2,h3,h4,h5,h6,p{
     color:#fdffff;
@@ -48,7 +48,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #38484D;
+    background: #f5f5f5;
     color: #fff;
     padding-left: 2rem!important;
     padding-right: 2rem!important;
@@ -56,7 +56,7 @@ a{
     max-height: 70px;
    }
    .nav-links a {
-    color: #fdffff;
+    color: #131316;
     font-weight: 600;
    }
    .left-menu {
@@ -111,7 +111,7 @@ a{
 /* LOGO */
 .logo {
     font-size: 40px;
-    color:#fdffff;
+    color:#242424;
     font-weight: 800;
    }
    /* NAVBAR MENU */
@@ -453,7 +453,7 @@ border:0px;
 }
 .itemcards{
   background-color: #fff;
-  padding: 100px;
+  padding: 20px;
   flex-grow: 1;
   flex-shrink: 3;
 }
@@ -464,10 +464,11 @@ border:0px;
   font-weight: 600;
   color: #131316;
   text-transform: uppercase;
+  font-size: 1.2rem;
 }
 .cardlead{
   margin-top: 50px;
-  inline-size: 200px; 
+  inline-size: 150px; 
   overflow: hidden;
   letter-spacing: 2px;
   line-height: 1.2rem;
@@ -563,4 +564,202 @@ ul{
   flex-wrap:wrap;
   justify-content: center;
   flex-direction: row;
+}
+
+
+/*Logo Slider*/
+.trigger{
+  background-color: #f5f5f5;
+}
+
+.logoslide{
+  color:#c0c0c0;
+  width: 150px;
+  height:auto;
+  filter: grayscale(100%);
+
+}
+
+
+/*section1*/
+
+.swiper {
+  width: auto;
+  height: 60vh;
+  background-color: #fc04ac;
+}
+.swiper-pagination swiper-pagination-progressbar {
+  color:#fc04ac;
+}
+.swiper-button-prev{
+  color:#fc04ac!important;
+}
+.swiper-button-next{
+  color:#fc04ac!important;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slick Slider */
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 135%;
+  font-size: 1.8rem;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+.slide {
+    transition: filter .4s;
+    margin: 0px 40px;
+}
+
+.fas {
+    color: #242424;
+    opacity: 0.5;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 35%;
+    font-size: 1.8rem;
+}
+
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
 }

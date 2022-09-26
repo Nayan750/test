@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'home#index'
-  match '/about',  to: 'home#about',via: 'get'
+  get 'home/about'
   match '/contact',  to: 'home#contact',via: 'get'
   match '/brands',  to: 'home#brands',via: 'get'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
