@@ -4,6 +4,5 @@ class HomeController < ApplicationController
   def about 
   end
   def brands
-    @brands = [ 'Sketchers','Whitenoisethelabel']
   end
 end

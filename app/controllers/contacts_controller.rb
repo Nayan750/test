@@ -8,11 +8,11 @@ class ContactsController < ApplicationController
     @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
-      flash.now[:success] = 'Message sent!'
-      redirect_path
+      redirect_to thank_you_url, notice: "Thank you!"
+
     else
       flash.now[:error] = 'Could not send message'
       render :new
     end
-  end
+  end 
 end

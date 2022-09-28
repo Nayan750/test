@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@tailwindcss/ui": "^0.7.2",
+    "alpinejs": "^3.10.3"
+  }
+}

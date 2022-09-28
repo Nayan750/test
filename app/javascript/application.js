@@ -43,3 +43,9 @@ $(document).ready(function(){
     }]
     });
   });
+
+
+  function hideDiv(){
+    let window = document.getElementById("hide");
+    window.style.display = "none";
+  }
