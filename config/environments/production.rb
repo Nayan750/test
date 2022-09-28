@@ -75,6 +75,9 @@ Rails.application.configure do
   # Don't log any deprecations.
   config.active_support.report_deprecations = false
 
+  #secret Key 
+  config.secret_key_base = ENV['SECRET_KEY_BASE']
+
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
@@ -86,7 +89,7 @@ Rails.application.configure do
     :address        => ENV['MAILGUN_SMTP_SERVER'],
     :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
     :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => '#', # UPDATE THIS VALUE WITH YOUR OWN APP
+    :domain         => 'https://sea-turtle-app-62vp7.ondigitalocean.app/', # UPDATE THIS VALUE WITH YOUR OWN APP
     :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
