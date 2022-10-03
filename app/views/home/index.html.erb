@@ -3,3 +3,8 @@
     <%= render "layouts/team"%>
     <%= render "layouts/logoslide"%>
 
+<form action="/contact_created" method="post">
+   <input name="email" type="email" class="form-control mb-1" placeholder="Your email">
+   <textarea name="message" class="form-control" placeholder="Your message"></textarea>
+   <button type="submit">Submit</button>
+</form>

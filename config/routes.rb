@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'errors/not_found'
+  get 'errors/internal_server_error'
+  post "contact_created" => "contacts_mailer#contact_created"
   root 'home#index'
   get 'home/about'
   match '/services', to: 'home#services', via: 'get'
@@ -14,4 +17,7 @@ Rails.application.routes.draw do
   
   # resources :notes
   # post 'download/notes', to: 'notes#download'
+
+  match "/404", to: "errors#not_found", via: :all
+  match "/500", to: "errors#internal_server_error", via: :all
 end

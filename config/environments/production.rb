@@ -82,14 +82,19 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require "syslog/logger"
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
-  ActionMailer::Base.smtp_settings = {
-    :port           => ENV['MAILGUN_SMTP_PORT'],
-    :address        => ENV['MAILGUN_SMTP_SERVER'],
-    :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-    :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain         => 'https://sea-turtle-app-62vp7.ondigitalocean.app/', # UPDATE THIS VALUE WITH YOUR OWN APP
-    :authentication => :plain,
-  }
+  config.action_mailer.default_url_options = { :host => 'sea-turtle-app-62vp7.ondigitalocean.app' }  
+  config.action_mailer.delivery_method = :smtp  
+  config.action_mailer.perform_deliveries = true  
+  config.action_mailer.raise_delivery_errors = false  
+  config.action_mailer.default :charset => "utf-8"  
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'sea-turtle-app-62vp7.ondigitalocean.app',
+  user_name:            ENV["info@auzmena.com"],
+  password:             ENV["xhwlhfxjyrzmukmu"],
+  authentication:       'plain',
+  enable_starttls_auto: true  }
   ActionMailer::Base.delivery_method = :smtp
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
