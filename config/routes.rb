@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   match '/thank-you',  to: 'home#thankyou',via: 'get'
   match '/contact',  to: 'home#contact',via: 'get'
   match '/brands',  to: 'home#brands',via: 'get'
+  match '/our-team', to: 'home#team', via: 'get'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

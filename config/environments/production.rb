@@ -82,7 +82,7 @@ Rails.application.configure do
   # Use a different logger for distributed setups.
   # require "syslog/logger"
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new "app-name")
-  config.action_mailer.default_url_options = { :host => 'sea-turtle-app-62vp7.ondigitalocean.app' }  
+  config.action_mailer.default_url_options = { :host => 'auzmena.online' }  
   config.action_mailer.delivery_method = :smtp  
   config.action_mailer.perform_deliveries = true  
   config.action_mailer.raise_delivery_errors = false  
@@ -90,7 +90,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'sea-turtle-app-62vp7.ondigitalocean.app',
+  domain:               'auzmena.online',
   user_name:            ENV["info@auzmena.com"],
   password:             ENV["xhwlhfxjyrzmukmu"],
   authentication:       'plain',
