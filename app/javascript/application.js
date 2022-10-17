@@ -2,22 +2,6 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 
-// scroll animation
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         console.log(entry)
-//         if (entry.isIntersecting){
-//             entry.target.classList.add('show');
-//         } else {
-//             entry.target.classList.remove('show');
-//         }
-//     }); 
-// });
-
-
-// const hiddenElements = document.querySelectorAll('.hidden');
-// hiddenElements.forEach((el) => observer.observe(el));
-
 
 $(document).ready(function(){
     $('.customer-logos').slick({
@@ -44,8 +28,22 @@ $(document).ready(function(){
     });
   });
 
-
-  function hideDiv(){
-    let window = document.getElementById("hide");
-    window.style.display = "none";
-  }
+// Features
+$.scrollify({
+  section : "section",
+  sectionName : "hidden",
+  interstitialSection : "",
+  easing: "easeOutExpo",
+  scrollSpeed: 1100,
+  offset : 0,
+  scrollbars: true,
+  standardScrollElements: "",
+  setHeights: true,
+  overflowScroll: true,
+  updateHash: true,
+  touchScroll:true,
+  before:function() {},
+  after:function() {},
+  afterResize:function() {},
+  afterRender:function() {}
+});

@@ -20,8 +20,14 @@
     />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+                $(function() {
+                    $.scrollify({
+                        section : "section",
+                    });
+                });
+            </script>
   </head>
-
   <body>
     <%= render "layouts/navbar" %>
     <%= yield %>
