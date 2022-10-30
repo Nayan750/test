@@ -4,6 +4,14 @@ Rails.application.routes.draw do
   post "contact_created" => "contacts_mailer#contact_created"
   root 'home#index'
   get 'home/about'
+  match '/wholesale' , to: "home#wholesale", via: 'get'
+  match '/ecommerce' , to: "home#ecommerce", via: 'get'
+  match '/retail' , to: "home#retail", via: 'get'
+  match '/collaborations' , to: "home#collaboration", via: 'get'
+  match '/white-labeling' , to: "home#white_labeling", via: 'get'
+  match '/franchise' , to: "home#franchise", via: 'get'
+  match '/ceo-tugba' , to: "home#tugba", via: 'get'
+  match '/coo' , to: "home#andreas", via: 'get'
   match '/services', to: 'home#services', via: 'get'
   match '/about', to: 'home#about', via: 'get'
   match '/thank-you',  to: 'home#thankyou',via: 'get'
@@ -21,4 +29,5 @@ Rails.application.routes.draw do
 
   match "/404", to: "errors#not_found", via: :all
   match "/500", to: "errors#internal_server_error", via: :all
+
 end
