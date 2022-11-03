@@ -1,16 +1,85 @@
- <nav class="navbar">
-     <!-- LOGO -->
-     <%= link_to "Auzmena", root_path, class:"logo"%>
-     <!-- NAVIGATION MENU -->
-     <ul class="nav-links">
-       <!-- USING CHECKBOX HACK -->
-       <input type="checkbox" id="checkbox_toggle" />
-       <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-       <!-- NAVIGATION MENUS -->
-       <div class="menu">
-       <li class="hover-underline-animation"><%= link_to "Our Services", services_url %></li>
-         <li class="hover-underline-animation"><%= link_to "About Us", about_url %></li>
-         <li class="hover-underline-animation"><%= link_to "Contact", new_contact_url %></li>
-       </div>
-     </ul>
-   </nav>
+<div class="navbar bg-base-100 px-24 py-5">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost xl:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a href="/about">WHO WE ARE</a></li>
+        <li tabindex="0">
+          <a class="justify-between">
+            OUR SERVICES
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+          </a>
+          <ul class="p-2">
+            <li class="bg-white"><a href="/wholesale">WHOLESALE</a></li>
+            <li class="bg-white"><a href="/retail">RETAIL</a></li>
+            <li class="bg-white"><a href="/white-labeling">WHITE LABELING</a></li>
+            <li class="bg-white"><a href="/ecommerce">E-COMMERCE</a></li>
+            <li class="bg-white"><a href="/franchise">FRANCHISE</a></li>
+            <li class="bg-white"><a href="/collaborations">COLLABORATIONS</a></li>
+          </ul>
+        </li>
+        <li tabindex="0">
+          <a class="justify-between">
+              OUR BRANDS
+            <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
+          </a>
+          <ul class="p-2">
+            <li class="bg-white"><a href="/white-noise-the-label">WHITE NOISE THE LABEL</a></li>
+            <li class="bg-white"><a href="/wnx">WNX</a></li>
+            <li class="bg-white"><a href="/aziel">AZIEL</a></li>
+            <li class="bg-white"><a href="/ours">OURS</a></li>
+            <li class="bg-white"><a href="/heal">HEAL</a></li>
+            <li class="bg-white"><a href="/wntl">WNTL</a></li>
+          </ul>
+        </li>
+            <li><a href="/careers">CAREERS</a></li>
+            <li><a href="/customer-service">CUSTOMER SERVICE</a></li>
+            <li><a href="/contacts/new">CONTACT US</a></li>
+            <li><a href="/our-stores">OUR STORES</a></li>
+      </ul>
+    </div>
+    <a class="btn btn-ghost normal-case text-xl" href="/">AUZMENA</a>
+  </div>
+  <div class="navbar-center hidden xl:flex">
+    <ul class="menu menu-horizontal p-0">
+      <li><a href="/about">WHO WE ARE</a></li>
+      <li tabindex="0">
+        <a>
+          OUR SERVICES
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <ul class="p-2">
+            <li class="bg-white"><a  href="/wholesale">WHOLESALE</a></li>
+            <li class="bg-white"><a  href="/retail">RETAIL</a></li>
+            <li class="bg-white"><a  href="/white-labeling">WHITE LABELING</a></li>
+            <li class="bg-white"><a href="/ecommerce">E-COMMERCE</a></li>
+            <li class="bg-white"><a href="/franchise">FRANCHISE</a></li>
+            <li class="bg-white"><a href="/collaborations">COLLABORATIONS</a></li>
+        </ul>
+      </li>
+      <li tabindex="0">
+        <a>
+          OUR BRANDS
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
+        </a>
+        <ul class="p-2">
+           <li class="bg-white" href="/white-noise-the-label"><a>WHITE NOISE THE LABEL</a></li>
+            <li class="bg-white"><a href="/wnx">WNX</a></li>
+            <li class="bg-white"><a href="/aziel">AZIEL</a></li>
+            <li class="bg-white"><a href="/ours">OURS</a></li>
+            <li class="bg-white"><a href="/heal">HEAL</a></li>
+            <li class="bg-white"><a href="/wntl">WNTL</a></li>
+        </ul>
+      </li>
+           <li><a href="/careers">CAREERS</a></li>
+            <li><a href="/customer-service">CUSTOMER SERVICE</a></li>
+            <li><a href="/contacts/new">CONTACT US</a></li>
+            <li><a href="/our-stores">OUR STORES</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+   
+  </div>
+</div>

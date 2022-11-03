@@ -1,55 +1,64 @@
-<section>
-  <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
-      <div class="relative z-10 lg:py-16">
-        <div class="relative h-64 sm:h-80 lg:h-full">
-          <img
-            alt="House"
-            src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-            class="absolute inset-0 h-full w-full object-cover"
-          />
-        </div>
+<section class="overflow-hidden bg-blend-lighten hover:bg-blend-darken bg-[url(https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80)] bg-cover bg-center bg-no-repeat">
+  <div
+    class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
+  >
+    <div class="mx-auto max-w-xl text-center">
+      <h1 class="text-3xl font-extrabold sm:text-5xl text-white">
+        AUZMENA
+      </h1>
+
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a
+          class="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-white shadow hover:bg-gray-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+          href="/get-started"
+        >
+          Get Started
+        </a>
       </div>
+    </div>
+  </div>
+</section>
 
-<div class="p-8 sm:p-16 lg:p-24">
-          <h2 class="text-2xl font-bold sm:text-3xl">
-            About Auzmena
-          </h2>
+<section class="bg-white-50">
+  <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="mx-auto max-w-lg text-center">
+      <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                    About Auzmena
 
-          <p class="mt-4 text-gray-600">
-            Auzmena Trading LLC was established in 2016 and is currently based in Dubai, U.A.E.
+      </h2>
+
+      <p class="hidden text-gray-500 sm:mt-4 sm:block">
+         Auzmena Trading LLC was established in 2016 and is currently based in Dubai, U.A.E.
             The company focuses on franchising international master brands throughout the MENA region along with its own in-house production.
-            <br/><br/> The aim is to expand the market for all the affiliated brands.<br/>
-            AUZMENA is constantly sourcing new brands and growing the team through online platforms and new stores across the Middle-East.
-          </p>
-            <%= link_to "Get in touch", new_contact_url, class:"text-center inline-block block w-full rounded bg-rose-600 my-3 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-800 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto" %>
-        </div>
-      </div>
+            <br/>
+      </p>
+            <%= link_to "Get in touch", new_contact_url, class:"text-center inline-block block w-full rounded bg-primary my-3 px-12 py-3 text-sm font-medium text-white shadow hover:bg-gray-700 focus:outline-none focus:ring active:bg-primary-500 sm:w-auto" %>
     </div>
   </div>
 </section>
 
-<section class="">
-  <div class="max-w-screen-xl px-10 py-4 mx-auto sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
-      <div
-        class="relative h-64 overflow- rounded-lg sm:h-80 lg:h-full lg:order-last"
+<section
+  class="overflow-hidden bg-fixed bg-[url(https://images.unsplash.com/photo-1567958451986-2de427a4a0be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)] bg-cover bg-center bg-no-repeat"
+>
+  <div class="bg-black/25 p-20 md:p-12 lg:px-16 lg:py-24">
+    <div class="max-w-lg text-center sm:text-left">
+      <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+        IN-HOUSE PRODUCTION
+      </h2>
+
+      <p
+        class="hidden max-w-md text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed"
       >
-      <img src="https://img.freepik.com/free-photo/close-up-cobbler-working-with-leather_171337-12289.jpg?t=st=1665991445~exp=1665992045~hmac=d1b40a37e02bb5be310360f26f8d8a6123b5383cd874a44efb1bef0363794566" class="absolute inset-0 object-cover w-full h-full">
-
-      </div>
-
-      <div class="lg:py-24">
-        <h2 class="text-3xl font-bold sm:text-4xl">IN-HOUSE PRODUCTION</h2>
-
-        <p class="mt-4 text-gray-600">
-           The in-house brand was established in 2016 and named White Noise The Label. The label is the center of creativity, in which all our designs and products are carefully picked to appeal to the current fashion trends. 
+         The in-house brand was established in 2016 and named White Noise The Label. The label is the center of creativity, in which all our designs and products are carefully picked to appeal to the current fashion trends. 
             The brand’s focus is quality and unique products at affordable prices.
-        </p>
-         <%= link_to "About Us", about_url, class:"text-center inline-block block w-full rounded bg-rose-600 my-3 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-800 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto" %>
+      </p>
+
+      <div class="mt-4 sm:mt-8">
+                    <%= link_to "Get in touch", new_contact_url, class:"text-center inline-block block w-full rounded bg-primary my-3 px-12 py-3 text-sm font-medium text-white shadow hover:bg-gray-700 focus:outline-none focus:ring active:bg-primary-500 sm:w-auto" %>
 
       </div>
     </div>
   </div>
 </section>
+
 <!-- Section 2 -->
