@@ -24,6 +24,9 @@ Rails.application.routes.draw do
   match '/white-noise-the-label', to: 'home#whitenoise', via: 'get'
   match '/wnx', to: 'home#wnx', via: 'get'
   match '/aziel', to: 'home#aziel', via: 'get'
+  match '/wntl', to: 'home#wntl', via: 'get'
+  match '/ours', to: 'home#ours', via: 'get'
+  match '/heal', to: 'home#heal', via: 'get'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
