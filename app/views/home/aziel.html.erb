@@ -1,21 +1,160 @@
-<div class="lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
-            <div class="xl:pt-24 w-full xl:w-1/2 relative pb-12 lg:pb-0">
-                <div class="relative">
-                    <div class="absolute">
-                        <div class="">
-                            <h1 class="my-2 text-gray-800 font-bold text-2xl">
-                                AZIEL
-                            </h1>
-                            <p class="my-2 text-gray-800">This Brand will be released soon.</p><br/>
-                            <%= link_to "Go Back", root_path, class:"sm:w-full lg:w-auto my-5 border rounded md py-4 px-8 text-center bg-fuchsia-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50" %>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="#" />
-                    </div>
+<!-- <div class="lg:px-24 lg:py-24 md:py-20 md:px-44 px-4 py-24 items-center flex justify-center flex-col-reverse lg:flex-row md:gap-28 gap-16">
+    <div class="xl:pt-24 w-full xl:w-1/2 relative pb-12 lg:pb-0">
+        <div class="relative">
+            <div class="absolute">
+                <div class="">
+                    <h1 class="my-2 text-gray-800 font-bold text-2xl">
+                        WNTL
+                    </h1>
+                    <p class="my-2 text-gray-800">This Brand will be released soon.</p><br/>
+                    <%= link_to "Go Back", root_path, class:"sm:w-full lg:w-auto my-5 border rounded md py-4 px-8 text-center bg-fuchsia-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-opacity-50" %>
                 </div>
             </div>
             <div>
                 <img src="#" />
             </div>
         </div>
+    </div>
+    <div>
+        <img src="#" />
+    </div>
+</div> -->
+
+
+<section class="overflow-hidden h-120 aziel-banner bg-cover bg-center bg-no-repeat">
+  <div class="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="max-w-lg text-center sm:text-left">
+      <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+        Aziel
+      </h2>
+
+      <p
+        class="max-w-md text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed"
+      >
+        Welcome to Aziel Online Shop! Men's Shoes
+      </p>
+
+      <div class="mt-4 sm:mt-8">
+        <a
+          href="https://www.whitenoisethelabel.com/"
+          class="inline-flex items-center rounded-full bg-black px-8 py-3 text-white shadow-lg transition focus:outline-none focus:ring"
+        >
+          <span class="text-sm font-medium"> Order Now </span>
+
+          <svg
+            class="ml-3 h-5 w-5"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17 8l4 4m0 0l-4 4m4-4H3"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-white">
+  <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8">
+    <div class="text-center">
+
+      <div style="text-align: -webkit-center; "> <%= image_tag "aziel.png",:style=>"max-width: 300px;" %> </div>
+      <br>
+      <h2 class="text-lg font-bold">Our Products</h2>
+
+      <p class="text-2xl font-medium" style="color: black;">
+        Handmade with love
+      </p>
+    </div>
+
+    <div class="swiper mt-8" style="background-color:white;">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <a href="https://www.whitenoisethelabel.com/collections/all" class="block">
+            <div>
+              <p class="text-xs  brown_color">Aziel</p>
+
+              <h3 class="font-bold">Men Fashion</h3>
+            </div>
+
+            <%= image_tag "Azeil/1.jpeg", :class=>"aspect-[3/4] w-full object-cover" %>
+
+
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="https://www.whitenoisethelabel.com/collections/all" class="block">
+            <div>
+              <p class="text-xs  brown_color">Aziel</p>
+
+              <h3 class="font-bold">Men Fashion</h3>
+            </div>
+
+            <%= image_tag "Azeil/2.jpeg", :class=>"aspect-[3/4] w-full object-cover" %>
+
+
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="https://www.whitenoisethelabel.com/collections/all" class="block">
+            <div>
+              <p class="text-xs  brown_color">Aziel</p>
+
+              <h3 class="font-bold">Men Fashion</h3>
+            </div>
+
+            <%= image_tag "Azeil/3.jpeg", :class=>"aspect-[3/4] w-full object-cover" %>
+
+
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="https://www.whitenoisethelabel.com/collections/all" class="block">
+            <div>
+              <p class="text-xs  brown_color">Aziel</p>
+
+              <h3 class="font-bold">Men Fashion</h3>
+            </div>
+
+            <%= image_tag "Azeil/4.jpeg", :class=>"aspect-[3/4] w-full object-cover" %>
+
+
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper-pagination !relative !bottom-0 mt-12"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  new Swiper('.swiper', {
+    loop: true,
+    spaceBetween: 32,
+    slidesPerView: 1,
+    pagination: {
+      clickable: true,
+      el: '.swiper-pagination',
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+    },
+  })
+</script>

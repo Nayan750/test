@@ -23,6 +23,9 @@ html,body
     overflow-x: hidden; 
 }
 
+.brown_color{
+  color: brown;
+}
 
 .banner-header{
   margin-top: 0px;
@@ -30,4 +33,100 @@ html,body
   height: 30vh;
   object-fit: cover;
   opacity: 0.8;
+}
+.banner_paddding{
+  padding-bottom: 15rem !important;
+  padding-top: 4rem !important;
+}
+.logo{
+  width: 150px;
+}
+.h-500{
+  height: 500px;
+}
+.h-435{
+  height: 435px;
+}
+.nested_ul{
+  border: 1px solid #fb8dfa;
+  background: black;
+}
+
+.bg-light-pink{
+  background: #fb8dfa;
+}
+
+.home_banner{
+  background-image: url('Home-page/Home-Page-Banner.jpg');
+}
+
+.mid_section{
+  background-image: url('banner_2.jpeg');
+}
+
+.wntl-banner{
+  background-image: url('WNTL/BANNER-IMAGE-min.jpeg');
+}
+
+.wn-label-banner{
+  background-image: url('WHITE-NOISE-THE-LABEL/BANNER-IMAGE.jpg');
+}
+
+.wtl-banner{
+  background-image: url('WNTL/banner.jpg');
+}
+
+.wnx-banner{
+  background-image: url('WN_X/banner.jpg');
+}
+
+.heal-banner{
+  background-image: url('HEEAL_S/BANNER-IMAGE.jpg');
+}
+
+.aziel-banner{
+  background-image: url('Aziel-Page/BANNER_2.jpg');
+}
+
+.career_banner{
+  background-image: url('career_banner.jpg');
+}
+
+.ours-banner{
+  background-image: url('Ours/banner.jpg');
+}
+
+.bg-black{
+  background-color: black;
+}
+
+.h-95{
+  height: 95%;
+}
+
+.cover_banner{
+  object-fit: cover;
+}
+
+#downloads-filter{
+  padding: 60px 0;
+}
+
+.contact_us_color{
+  background-color: #07464A;
+  border-color: #07464A;
+}
+
+.faq-product-buttons a span{
+  padding: 0 15px;
+  font-size: 20px;
+}
+.border-pink{
+  border-color: black
+}
+.dark_pink{
+  color: black;
+}
+.bg_dark_pink{
+  background-color: black;
 }

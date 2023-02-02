@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   match '/our-team', to: 'home#team', via: 'get'
   match '/careers', to: 'home#career', via: 'get'
   match '/our-stores', to: 'home#ourstores', via: 'get'
-  match '/customer-service' , to: "home#customer_service", via: 'get'
+  match '/customer-service' , to: "home#customerservice", via: 'get'
   match '/white-noise-the-label', to: 'home#whitenoise', via: 'get'
   match '/wnx', to: 'home#wnx', via: 'get'
   match '/aziel', to: 'home#aziel', via: 'get'

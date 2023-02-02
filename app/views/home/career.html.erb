@@ -1,34 +1,127 @@
-<div class="hero h-64" style="background-image: url(https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
+
+<div class="hero career_banner" style="height: 24rem;">
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content text-center text-neutral-content">
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold z-0">A MODERN WORK PLACE</h1>
-            <%= link_to "Get in touch", new_contact_url, class:"btn btn-primary" %>
-    </div>
-  </div>
-</div>
-
-<section class="bg-white">
-  <div class="p-8 md:p-12 lg:px-16 lg:py-24">
-    <div class="mx-auto max-w-lg text-center">
-      <h2 class="text-2xl font-bold text-gray-900 md:text-3xl ">
-            AUZMENA LLC
-      </h2>
-
-      <p class="text-black sm:mt-4 sm:block tracking-wide">
-         At Auzmena, we really do believe in Possibilities and the values that put them within reach. Working at Auzmena offers a broad range of opportunities for candidates from all walks in life, from students and recent graduates to experienced managers.<br/> Our business model involves us at every stage of the retail sector in more than a dozen markets around the world, so we offer a diverse range of roles and locations.
-            <br/>
-      </p>
-    </div>
-  </div>
-</section>
-
-<div class="hero h-64" style="background-image: url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);">
-  <div class="hero-overlay bg-opacity-60"></div>
-  <div class="hero-content text-center text-neutral-content">
-    <div class="max-w-md">
+    <div>
       <h1 class="mb-5 text-5xl font-bold">Start a career with Us</h1>
-      <%= link_to "Get in touch", new_contact_url, class:"btn btn-primary" %>
     </div>
   </div>
 </div>
+
+
+<%= form_for @contact do |f| %>
+
+<!-- ====== Contact Section Start -->
+   <section class="bg-white py-20 lg:py-[120px] overflow-hidden relative z-10 px-8">
+      <div class="container">
+         <div class="flex flex-wrap lg:justify-between -mx-4">
+            <div class="w-full lg:w-1/2 xl:w-6/12 px-4">
+               <div class="mb-12 lg:mb-0">
+                  <h2
+                     class="
+                     text-dark
+                     mb-6
+                     uppercase
+                     font-bold
+                     text-[32px]
+                     sm:text-[40px]
+                     lg:text-[36px]
+                     xl:text-[40px]
+                     "
+                     >
+                     A MODERN WORK PLACE
+                  </h2>
+                  <div class="flex mb-8 w-full">
+                     <div>
+                        <%= image_tag "Career-page/LEFT-SIDE-IMAGE.jpg" %>
+                     </div>
+
+                  </div>
+
+               </div>
+            </div>
+            <div class="w-full lg:w-1/2 xl:w-5/12 px-4">
+               <div class="bg-white relative rounded-lg p-8 sm:p-12 shadow-lg">
+                  <%= form_for @contact do |f| %>
+                     <div class="mb-6">
+                        <h4 class="block mb-4 text-base text-primary-600 font-semibold">
+                          Start a career with Us
+                        </h4>
+                        <%= f.text_field  :name, required: true, class:"w-full
+                           rounded
+                           py-3
+                           px-[14px]
+                           text-body-color text-base
+                           border border-[f0f0f0]
+                           outline-none
+                           focus-visible:shadow-none
+                           focus:border-indigo-600",placeholder: "Full Name" %>
+                     </div>
+                     <div class="mb-6">
+                        <%= f.text_field :email, required: true, class: "w-full
+                           rounded
+                           py-3
+                           px-[14px]
+                           text-body-color text-base
+                           border border-[f0f0f0]
+                           outline-none
+                           focus-visible:shadow-none
+                           focus:border-indigo-600", placeholder:"your@email.com" %>
+                     </div>
+                     <div class="mb-6">
+                        <%= f.text_field :phone, required: true, class: "w-full
+                           rounded
+                           py-3
+                           px-[14px]
+                           text-body-color text-base
+                           border border-[f0f0f0]
+                           outline-none
+                           focus-visible:shadow-none
+                           focus:border-indigo-600", placeholder:"Your Phone" %>
+                     </div>
+                     <div class="mb-6">
+                        <%= f.select :phone, ["LOGISTICS","CREATIVE TEAM","E-COMMERCE ","FACTORY TEAM","HUMAN RESOURCES","ACCOUNTING","LEGAL","ADMINISTRATOR","SALES ","MARKETING","PHOTOGRAPHER","VIDEOGRAPHER"],{:prompt => "Choose Job Opening"},{class: "w-full
+                           rounded
+                           py-3
+                           px-[14px]
+                           text-body-color text-base
+                           border border-[f0f0f0]
+                           outline-none
+                           focus-visible:shadow-none
+                           focus:border-indigo-600"} %>
+
+                     </div>
+                     <div class="mb-6">
+                        <%= f.text_area :message, rows: 8, cols: 40, required: true, class: " w-full
+                           rounded
+                           py-3
+                           px-[14px]
+                           text-body-color text-base
+                           border border-[f0f0f0]
+                           resize-none
+                           outline-none
+                           focus-visible:shadow-none
+                           focus:border-indigo-600",
+                           placeholder: "Send me a message"%>
+                     </div>
+                     <div class= "d-none">
+                        <%= f.text_field :nickname, :hint => 'Leave this field blank!', style: 'display:none' %>
+                     </div>
+                     <div>
+                        <%= f.submit 'Submit', class: 'w-full
+                           text-white
+                           bg-indigo-700
+                           rounded
+                           border border-primary
+                           p-3
+                           transition
+                           hover:bg-opacity-90' %>
+                     </div>
+                  <% end %>
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+<% end %>
