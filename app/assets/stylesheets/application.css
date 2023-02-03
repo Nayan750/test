@@ -36,13 +36,13 @@ html,body
 }
 .banner_paddding{
   padding-bottom: 15rem !important;
-  padding-top: 4rem !important;
+  padding-top: 12rem !important;
 }
 .logo{
   width: 150px;
 }
 .h-500{
-  height: 500px;
+  height: 600px;
 }
 .h-435{
   height: 435px;
@@ -69,7 +69,7 @@ html,body
 }
 
 .wn-label-banner{
-  background-image: url('WHITE-NOISE-THE-LABEL/BANNER-IMAGE.jpg');
+  background-image: url('h_header.jpeg');
 }
 
 .wtl-banner{
