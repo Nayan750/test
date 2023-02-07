@@ -11,6 +11,12 @@ class HomeController < ApplicationController
   def customerservice
   end
 
+  def terms
+  end
+
+  def privacy_policy
+  end
+
   def career
     @contact = Contact.new
   end
