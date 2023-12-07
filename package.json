@@ -6,7 +6,7 @@
     "trix": "^2.0.0-beta.0"
   },
   "scripts": {
-    "start": "rails server",
+    "start": "sudo apt install libpq-dev && rails server",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   }
