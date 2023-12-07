@@ -1,0 +1,10 @@
+
+
+{
+    "build": {
+      "hooks": {
+        "prebuild": "bash prebuild.sh"
+      }
+    }
+  }
+  
