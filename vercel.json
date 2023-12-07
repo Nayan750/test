@@ -1,0 +1,13 @@
+{
+    "builds": [
+      {
+        "src": "config",
+        "use": "@vercel/ruby",
+        "config": { "installCommand": "./config/install-libpq.sh" }
+      }
+    ],
+    "routes": [
+      { "src": "/.*", "dest": "/index.html" }
+    ]
+  }
+  
